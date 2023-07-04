@@ -1,4 +1,5 @@
 import { useEffect ,useState } from "react";
+import { ButtonColor } from "./ButtonColor";
 
 
 export const ColorTitle = () => {
@@ -33,6 +34,9 @@ export const ColorTitle = () => {
     <>
     <div className="container">
     <h1>{ hexColor }</h1>
+    <ButtonColor 
+    onRandomColor={ onRandomColor }
+    />
     </div>
     </>
   )
