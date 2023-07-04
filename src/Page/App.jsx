@@ -1,7 +1,7 @@
-import { ColorTitle } from '../Components/ColorTitle';
+import { TitleColorHex } from '../Components/TitleColorHex';
 
 export const App = () => {
   return (
-    <ColorTitle />
+    <TitleColorHex />
   )
 }

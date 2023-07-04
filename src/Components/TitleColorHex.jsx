@@ -1,8 +1,8 @@
 import { useEffect ,useState } from "react";
-import { ButtonColor } from "./ButtonColor";
+import { ButtonColorHex } from "./ButtonColorHex";
 
 
-export const ColorTitle = () => {
+export const TitleColorHex = () => {
 
     const [hexColor, setHexColor] = useState('');
 
@@ -16,7 +16,7 @@ export const ColorTitle = () => {
 
     const onRandomColor = () => {
         let color = '';
-        for(var i=0;i<6;i++){
+        for(let i=0;i<6;i++){
             color = color + onRandomHex();
         }
         setHexColor( color );
@@ -34,7 +34,7 @@ export const ColorTitle = () => {
     <>
     <div className="container">
     <h1>{ hexColor }</h1>
-    <ButtonColor 
+    <ButtonColorHex 
     onRandomColor={ onRandomColor }
     />
     </div>
