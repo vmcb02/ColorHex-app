@@ -20,13 +20,17 @@ export const TitleColorHex = () => {
             color = color + onRandomHex();
         }
         setHexColor( color );
-        document.title = `El color de fondo es: ${color}`;
-        return backColor.style.background = `#${color}`;
+         
     }
 
     useEffect(() => {
       onRandomColor();
-    }, [])
+    }, []);
+
+    useEffect(() => {
+    document.title = `El color de fondo es: ${hexColor}`;
+    backColor.style.background = `#${hexColor}`;
+    }, [hexColor]);
     
 
 
